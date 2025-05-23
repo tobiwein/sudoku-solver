@@ -8,6 +8,7 @@ public class SolveButton extends Button {
 
     public SolveButton(final GameGrid gameGrid) {
         super("Solve");
+        
         this.setDisable(true);
         this.setOnAction((final ActionEvent event) -> {
 
@@ -27,6 +28,7 @@ public class SolveButton extends Button {
             this.setDisable(true);
             
         });
+
     }
     
 }

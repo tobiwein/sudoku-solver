@@ -8,6 +8,7 @@ public class CheckButton extends Button {
 
     public CheckButton(final GameGrid gameGrid, final Button solveButton) {
         super("Check");
+
         this.setOnAction((final ActionEvent event) -> {
 
             for (int row = 0; row < 9; row++) {
@@ -63,6 +64,7 @@ public class CheckButton extends Button {
             }
             
         });
+        
     }
     
 }

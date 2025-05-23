@@ -7,6 +7,7 @@ public class ClearButton extends Button {
 
     public ClearButton(final GameGrid gameGrid, final Button solveButton, final Button checkButton) {
         super("Clear");
+        
         this.setOnAction((final ActionEvent event) -> {
 
             for (int row = 0; row < 9; row++) {
@@ -17,15 +18,15 @@ public class ClearButton extends Button {
                     cell.setEditable(true);
                     cell.setText("");
 
-                    gameGrid.newField();
-
                 }
             }
 
+            gameGrid.newField();
             solveButton.setDisable(true);
             checkButton.setDisable(false);
             
         });
+
     }
     
 }
